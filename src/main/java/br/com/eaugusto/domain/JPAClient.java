@@ -1,12 +1,19 @@
 package br.com.eaugusto.domain;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 /**
  * Represents a client entity in the system.
  * 
- * Mapped to the table <code>tb_client</code> and contains basic personal and address information.
- * Implements {@link IPersistable} for generic persistence support.
+ * Mapped to the table <code>tb_client</code> and contains basic personal and
+ * address information. Implements {@link IPersistable} for generic persistence
+ * support.
  * 
  * @see IPersistable
  * @see javax.persistence.Entity
