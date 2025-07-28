@@ -20,6 +20,15 @@ import br.com.eaugusto.dao.JPAClientDAODB3;
 import br.com.eaugusto.exceptions.DAOException;
 
 /**
+ * Integration test class to verify CRUD operations across three different
+ * JPA-based databases. Currently tests use: - DB1: {@link JPAClientDAODB1} -
+ * DB2: {@link JPAClientDAODB2} - DB3 (MySQL): {@link JPAClientDAODB3}
+ * 
+ * <p>
+ * Each test runs the same operation across all three implementations to ensure
+ * consistent behavior.
+ * </p>
+ * 
  * @author Eduardo Augusto (github.com/AsrielDreemurrGM/)
  * @since July 27, 2025
  */

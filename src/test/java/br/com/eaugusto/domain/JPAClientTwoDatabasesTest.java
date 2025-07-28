@@ -17,6 +17,18 @@ import br.com.eaugusto.dao.JPAClientDAODB2;
 import br.com.eaugusto.exceptions.DAOException;
 
 /**
+ * Test class for verifying JPA client operations across two PostgreSQL-backed
+ * DAOs.
+ * 
+ * <p>
+ * Uses: - DB1: {@link JPAClientDAODB1} - DB2: {@link JPAClientDAODB2}
+ * </p>
+ * 
+ * <p>
+ * This class ensures data consistency and isolation between the two DAOs
+ * through full CRUD operation testing.
+ * </p>
+ * 
  * @author Eduardo Augusto (github.com/AsrielDreemurrGM/)
  * @since July 25, 2025
  */
