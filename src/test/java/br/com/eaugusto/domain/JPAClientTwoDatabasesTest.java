@@ -76,7 +76,6 @@ public class JPAClientTwoDatabasesTest {
 
 		JPAClient clientFoundDB2 = clientDB2Dao.findById(clientDB2.getId());
 		assertNotNull(clientFoundDB2);
-
 	}
 
 	@Test
@@ -241,7 +240,7 @@ public class JPAClientTwoDatabasesTest {
 
 	private JPAClient createClient() {
 		JPAClient client = new JPAClient();
-		client.setCpf(randomNumber.ints().toString());
+		client.setCpf(String.valueOf(randomNumber.nextInt(1_000_000_000)));
 		client.setName("Eduardo");
 		client.setCity("JDBC City");
 		client.setAddress("SQL");
